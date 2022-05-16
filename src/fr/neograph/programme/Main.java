@@ -34,6 +34,32 @@ public class Main {
 		String pseudo = "Neograph";
 		String[] pseudos = new String[]{"Neograph", "Iznobad"}; //new String optionnel
 		System.out.println(pseudos[1]);
+		
+		String pseudoList = "Neograph,Iznobad,Evleh,Meyu";
+		String[] pseudos2 = pseudoList.split(",");
+		System.out.println(pseudos2.length);
+		
+		// boucles
+		// for
+		for(int i = 1; i <= 5; i++) {
+			System.out.println("tour " + i);
+		}
+		// foreach
+		for(String str : pseudos2) {
+			System.out.println(str);
+		}
+		//while
+		int j = 0;
+		while(j <=5) {
+			System.out.println("whileeee");
+			j++;
+		}
+		//do while
+		int k = 0;
+		do {
+			k++;
+			System.out.println(k);
+		}while(k < 5);
 	}
 	
 }
